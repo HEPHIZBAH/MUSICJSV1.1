@@ -1,0 +1,248 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    background-image: url('musicbackground.avif');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+nav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5%;
+   
+}
+ ul li{
+    display: inline;
+    list-style-type: none;
+ }
+  nav ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: aliceblue;
+    display: inline-block;
+    padding: 10px 35px;
+    font-weight: bold;
+    border-left: 1px solid rgb(31, 22, 165);
+
+ }
+  nav a:hover{
+    color: black;
+    font-size: 18px;
+  }
+  .action{
+    display: flex;
+  }
+  .playaction{
+    color: red;
+    font-size:45px;
+    opacity: 0.7;
+    cursor: pointer;
+  }
+  .logo{
+    color: rgba(29, 15, 223, 0.89);
+    font-size: 50px;
+    opacity: 0.5;
+  }
+  .menu-icon{
+    color: #2d17f1;
+    font-size: 40px;
+    padding: 10px;
+    display: none;
+  }
+  .main{
+    padding-top: 15vh ;
+    padding-left: 8%;
+    position: absolute;
+  }
+  .mainheader{
+    line-height:50px ;
+    font-size: 45px;
+    color: rgba(240, 248, 255, 0.815)
+  }
+  p {
+    color: rgba(0, 0, 0, 0.712);
+    font-size: 30px;
+    letter-spacing: 4px;
+    padding-bottom: 20px;
+  }
+  img {
+    display: inline;
+    width: 80px;
+    height: 80px;
+  }
+
+
+ /* =Responsive Structure
+----------------------------------------------- */
+@media (max-width: 1000px) {
+  /* Smaller Resolution Desktops and Laptops */
+ nav ul {
+     width:98%;
+     background-color: black;
+     position: absolute;
+     top: 80px;
+     right:0%;
+     z-index:1;
+ }
+ nav ul li {
+     display: block;
+     margin-top: 10px;
+     margin-bottom:10px ;
+ }
+ .menu-icon{
+     display:block;
+ }
+ #menulist{
+  overflow:hidden;
+  transition: 0.5s;
+ }
+}
+
+ /* =Responsive Structure
+----------------------------------------------- */
+@media (max-width: 800px) {
+  /* Smaller Resolution Desktops and Laptops */
+ nav ul {
+     width:98%;
+     background-color: black;
+     position: absolute;
+     top: 80px;
+     right:0%;
+     z-index:1;
+ }
+ nav ul li {
+     display: block;
+     margin-top: 10px;
+     margin-bottom:10px ;
+ }
+ .menu-icon{
+     display:block;
+ }
+ #menulist{
+  overflow:hidden;
+  transition: 0.5s;
+ }
+ .container{
+  background-image: url('musicbackground.avif');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+}
+
+@media (max-width: 450px) {
+  /* Smaller Resolution Desktops and Laptops */
+ nav ul {
+     width:98%;
+     background-color: black;
+     position: absolute;
+     top: 80px;
+     right:0%;
+     z-index:1;
+ }
+ nav ul li {
+     display: block;
+     margin-top: 10px;
+     margin-bottom:10px ;
+ }
+ .menu-icon{
+     display:block;
+ }
+ #menulist{
+  overflow:hidden;
+  transition: 0.5s;
+ }
+ .container{
+  background-image: url('musicbackground.avif');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+.main{
+  padding-top: 10vh ;
+  padding-left: 5%;
+  position: absolute;
+}
+.mainheader{
+  line-height:40px ;
+  font-size: 35px;
+  color: rgba(240, 248, 255, 0.815)
+}
+p {
+  color: rgba(0, 0, 0, 0.712);
+  font-size: 20px;
+  letter-spacing: 4px;
+  padding-bottom: 20px;
+}
+img {
+  display: inline;
+  width: 60px;
+  height: 60px;
+}
+
+}
+
+@media (max-width: 300px) {
+  /* Smaller Resolution Desktops and Laptops */
+ nav ul {
+     width:98%;
+     background-color: black;
+     position: absolute;
+     top: 80px;
+     right:0%;
+     z-index:1;
+ }
+ nav ul li {
+     display: block;
+     margin-top: 10px;
+     margin-bottom:10px ;
+ }
+ .menu-icon{
+     display:block;
+ }
+ #menulist{
+  overflow:hidden;
+  transition: 0.5s;
+ }
+ .container{
+  background-image: url('musicbackground.avif');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+.main{
+  padding-top: 10vh ;
+  padding-left: 5%;
+  position: absolute;
+}
+.mainheader{
+  line-height:20px ;
+  font-size: 15px;
+  color: rgba(240, 248, 255, 0.815)
+}
+p {
+  color: rgba(0, 0, 0, 0.712);
+  font-size: 10px;
+  letter-spacing: 2px;
+  padding-bottom: 20px;
+}
+img {
+  display: inline;
+  width: 30px;
+  height: 30px;
+}
+
+}
+

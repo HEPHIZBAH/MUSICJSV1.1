@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Soft Music</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/x-icon" href="flamesicon.png">
+        <link rel="stylesheet" href="portfolio.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+                <i class="fa fa-headphones logo" aria-hidden="true"></i>
+                <ul  id="menulist">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">HOME</a></li>
+                </ul>
+                <span class="menu-icon"><i class="fa fa-bars" aria-hidden="true" onclick="togglemenu()"></i></span>
+            </nav>
+            <div class="main">
+                <h1 class="mainheader">ENJOY<br>AWESOME<br> WORSHIP SONGS</h1>
+                <div class="action">
+                    <p>Click Here To Listen</p>
+                    <img src="play.png" id="icon">
+                </div>
+            </div>
+        </div>
+        <audio id="mysong">
+            <source src="Mercy-Chinwo-Obinasom.mp3" type="audio/mp3">
+        </audio>
+       <script>
+        var mysong = document.getElementById("mysong");
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function() {
+           if(mysong.paused){
+            mysong.play();
+            icon.src = "pause.png";
+           }
+           else{
+            mysong.pause();
+            icon.src="play.png";
+           }
+        }
+       </script>
+        <script>
+            var menulist = document.getElementById("menulist");
+            
+            menulist.style.maxHeight = "0px";
+    
+            function togglemenu() {
+    
+                if (menulist.style.maxHeight == "0px")
+                {
+                     menulist.style.maxHeight = "350px";
+                }
+                else {
+                    menulist.style.maxHeight = "0px"
+                }
+            }
+            </script>
+    </body>
+</html>
